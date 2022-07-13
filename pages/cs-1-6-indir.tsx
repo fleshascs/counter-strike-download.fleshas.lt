@@ -37,7 +37,7 @@ export default function Page() {
                   ünlü sürümü 1.6'dır, ancak 2005'te Counter-Strike: Source daha iyi grafiklere
                   sahip, ancak daha az “oynanış” olan yeni bir sürüm yayınlandı.
                 </p>
-                <DownloadButtons className='w-[10rem] my-6' />
+                <DownloadButtons className='my-6' />
 
                 <p className='mb-6'>
                   Counter-Strike's impact on the industry was big and immediate, quickly becoming

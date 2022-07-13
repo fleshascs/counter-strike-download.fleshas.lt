@@ -49,7 +49,7 @@ const Top: FC<TopProps> = ({ title }) => {
         alt='CS 1.6 Download'
         title='Counter-Strike 1.6'
       />
-      <DownloadButtons className='w-[10rem] mt-32' />
+      <DownloadButtons className='mt-32' />
     </div>
   );
 };

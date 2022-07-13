@@ -37,7 +37,7 @@ export default function Page() {
                   versão mais famosa é a 1.6, porém em 2005 foi lançada uma nova versão, o
                   Counter-Strike: Source com melhores gráficos, por ém menos “jogabilidade”.
                 </p>
-                <DownloadButtons className='w-[10rem] my-6' />
+                <DownloadButtons className='my-6' />
                 <a href={require('../images/csdownload/knf.png')} target='_blank'>
                   <img src={require('../images/csdownload/knf.png')} alt='CS game for windows' />
                 </a>

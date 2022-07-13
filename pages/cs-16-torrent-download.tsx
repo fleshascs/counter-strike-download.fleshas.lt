@@ -36,7 +36,7 @@ export default function Page() {
                   applications also help you download any file at maximum speed (of course if a
                   sufficient amount of file seeder's).
                 </p>
-                <DownloadButtons className='w-[10rem] mt-6' />
+                <DownloadButtons className='mt-6' />
                 <h3 className='text-amber-300 py-2 text-sm font-medium uppercase mt-5'>
                   How to download CS 1.6 torrent?
                 </h3>

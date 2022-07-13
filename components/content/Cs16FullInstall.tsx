@@ -21,7 +21,7 @@ export default function Page() {
         <li>- Can be played on 47/48 protocol servers</li>
       </ul>
 
-      <DownloadButtons className='w-[10rem] mt-6' />
+      <DownloadButtons className='mt-6' />
       <h3 className='text-amber-300 py-2 text-sm font-medium uppercase mt-5'>
         About Counter-Strike 1.6 install
       </h3>

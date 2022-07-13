@@ -19,7 +19,7 @@ export default function HomePage() {
         the Internet, but in e-sport competitions, and that this 2019 will be 20 years since its
         first appearance. But as amazing as this sounds, this game had modest origins.
       </p>
-      <DownloadButtons className='w-[10rem] my-6' />
+      <DownloadButtons className='my-6' />
 
       <a href={require('../../images/csdownload/server-list.jpg')} target='_blank'>
         <Image

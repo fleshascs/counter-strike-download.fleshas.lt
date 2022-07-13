@@ -23,11 +23,16 @@ const Buttons = ({ className }: ButtonsProps) => {
   }, []);
 
   return (
-    <div className={clsx(styles.dbcontainer, className, 'py-3')}>
+    <div
+      className={clsx(
+        className,
+        'inline-flex rounded-md justify-center p-2 h-min text-[0.7rem] font-bold bg-[#291f1fe6] py-3'
+      )}
+    >
       <a
         href='/csdownload'
         ref={directBtn}
-        className={clsx(styles.downloadbutton, 'mr-1')}
+        className='py-1 pl-4 pr-6 mr-1 rounded flex bg-red-900'
         target='_blank'
       >
         <Image
@@ -39,15 +44,14 @@ const Buttons = ({ className }: ButtonsProps) => {
           alt='CS 1.6 Download'
           title='Counter-Strike 1.6'
         />
-
         <div>
-          <div className={styles.dbtop}>DOWNLOAD</div>
-          <div className={styles.dbbottom}>Direct link</div>
+          <div className='text-white'>DOWNLOAD</div>
+          <div className='text-yellow-300'>Direct link</div>
         </div>
       </a>
       <a
         href='/csdownload-torrent'
-        className={clsx(styles.downloadbutton, 'mr-1')}
+        className='py-1 pl-4 pr-6 mr-1 rounded flex bg-red-900'
         ref={torrentBtn}
         target='_blank'
       >
@@ -61,8 +65,8 @@ const Buttons = ({ className }: ButtonsProps) => {
           title='Counter-Strike 1.6 Torrent'
         />
         <div>
-          <div className={styles.dbtop}>DOWNLOAD</div>
-          <div className={styles.dbbottom}>Torrent</div>
+          <div className='text-white'>DOWNLOAD</div>
+          <div className='text-yellow-300'>Torrent</div>
         </div>
       </a>
     </div>

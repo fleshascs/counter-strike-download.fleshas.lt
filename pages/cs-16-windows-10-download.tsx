@@ -29,7 +29,7 @@ export default function Page() {
                   Download Counter-Strike 1.6 for windows 10, this CS 1.6 install is fully
                   compatible with the latest windows 10 updates
                 </p>
-                <DownloadButtons className='w-[10rem] mt-6' />
+                <DownloadButtons className='mt-6' />
                 <a href='/svg/windows-10-logo-svgrepo-com.svg' target='_blank'>
                   <img
                     src='/svg/windows-10-logo-svgrepo-com.svg'
