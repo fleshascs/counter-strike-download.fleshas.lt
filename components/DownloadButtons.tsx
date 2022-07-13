@@ -1,23 +1,30 @@
 import clsx from 'clsx';
 import Image from './Image';
 import styles from './downloadButtons.module.css';
+import { useEffect, useRef } from 'react';
 interface ButtonsProps {
   className?: string;
 }
 const Buttons = ({ className }: ButtonsProps) => {
-  function log() {
-    fetch('https://fleshas.lt/php/api/csdownloads/').catch(() => {
-      //...
-    });
-  }
+  const directBtn = useRef(null);
+  const torrentBtn = useRef(null);
+
+  useEffect(() => {
+    //can't just use react onClick={log}, it doesn't work on firefox
+    directBtn.current.addEventListener('click', log);
+    torrentBtn.current.addEventListener('click', log);
+    function log() {
+      fetch('https://fleshas.lt/php/api/csdownloads/');
+    }
+    return () => {
+      directBtn.current?.removeEventListener('click', log);
+      torrentBtn.current?.removeEventListener('click', log);
+    };
+  }, []);
 
   return (
     <div className={clsx(styles.dbcontainer, className, 'py-3')}>
-      <a
-        href='https://fleshas.lt/cs-download/Counter-Strike1.6.exe'
-        onClick={log}
-        className={clsx(styles.downloadbutton, 'mr-1')}
-      >
+      <a href='/csdownload' ref={directBtn} className={clsx(styles.downloadbutton, 'mr-1')}>
         <Image
           className={styles.dbicon}
           width='40'
@@ -34,9 +41,9 @@ const Buttons = ({ className }: ButtonsProps) => {
         </div>
       </a>
       <a
-        href='https://fleshas.lt/cs-download/Counter-Strike 1.6.exe.torrent'
+        href='/csdownload-torrent'
         className={clsx(styles.downloadbutton, 'mr-1')}
-        onClick={log}
+        ref={torrentBtn}
       >
         <Image
           className={styles.dbicon}
