@@ -24,7 +24,12 @@ const Buttons = ({ className }: ButtonsProps) => {
 
   return (
     <div className={clsx(styles.dbcontainer, className, 'py-3')}>
-      <a href='/csdownload' ref={directBtn} className={clsx(styles.downloadbutton, 'mr-1')}>
+      <a
+        href='/csdownload'
+        ref={directBtn}
+        className={clsx(styles.downloadbutton, 'mr-1')}
+        target='_blank'
+      >
         <Image
           className={styles.dbicon}
           width='40'
@@ -44,6 +49,7 @@ const Buttons = ({ className }: ButtonsProps) => {
         href='/csdownload-torrent'
         className={clsx(styles.downloadbutton, 'mr-1')}
         ref={torrentBtn}
+        target='_blank'
       >
         <Image
           className={styles.dbicon}
