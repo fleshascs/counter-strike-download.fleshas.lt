@@ -1,3 +1,3 @@
-# counter-strike-download.lt website
+# counter-strike-download.fleshas.lt website
 
 ![preview](./example.jpg)
