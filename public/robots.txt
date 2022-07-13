@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: http://counter-strike-download.lt
+Host: http://counter-strike-download.fleshas.lt
 
 # Sitemaps
-Sitemap: http://counter-strike-download.lt/sitemap.xml
+Sitemap: http://counter-strike-download.fleshas.lt/sitemap.xml

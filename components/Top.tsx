@@ -10,7 +10,7 @@ const Top: FC<TopProps> = ({ title }) => {
   return (
     <div className='py-5 sm:py-16 relative flex flex-col lg:flex-row text-sm text-gray-400'>
       <div>
-        <h1 className='font-bold text-7xl mb-2 text-white leading-[4rem] uppercase'>
+        <h1 className='font-bold text-4xl sm:text-7xl mb-2 text-white sm:leading-[4rem] uppercase'>
           {title ? (
             title
           ) : (
@@ -34,7 +34,7 @@ const Top: FC<TopProps> = ({ title }) => {
         <span className='text-amber-300 inline-block min-w-[1rem]'>{percentage}%</span> */}
       </div>
       <Image
-        className='ml-auto pt-5 sm:pt-0'
+        className='ml-auto pt-5 sm:pt-0 opacity-30 sm:opacity-100'
         containerStyle={{
           position: 'absolute',
           right: 0,

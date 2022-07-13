@@ -1,127 +1,106 @@
 import { FC, ReactNode } from 'react';
-import Card from './Card';
+import { ListGroup, ListGroupItem } from './ListGroup';
+import Image from './Image';
+import Link from 'next/link';
 
 export interface SidebarProps {
   children?: ReactNode;
 }
 
-const icons = [require('../images/icons/cs-boost-b.png')];
-
 const downloads = [
   {
-    icon: icons[0],
-    linkTitle: 'CS1.6 warzone download',
-    title: 'CS 1.6 warzone'
+    linkTitle: 'CS 1.6 Indir',
+    title: 'CS 1.6 Indir',
+    href: '/cs-1-6-indir'
   },
   {
-    icon: icons[0],
-    linkTitle: 'CS 1.6 windows 10',
-    title: 'CS 1.6 windows 10'
+    linkTitle: 'CS 1.6 download em Português',
+    title: 'CS 1.6 download em Português',
+    href: '/cs-1-6-download-em-portugues'
   },
   {
-    icon: icons[0],
-    linkTitle: 'CS 1.6 full version',
-    title: 'CS 1.6 full version'
+    linkTitle: 'CS 1.6 Windows 10 Download',
+    title: 'CS 1.6 Windows 10 Download',
+    href: '/cs-16-windows-10-download'
   },
   {
-    icon: icons[0],
-    linkTitle: 'CS:Source',
-    title: 'CS:Source'
+    linkTitle: 'CS 1.6 Torrent Download',
+    title: 'CS 1.6 Torrent Download',
+    href: '/cs-16-torrent-download'
   },
   {
-    icon: icons[0],
-    linkTitle: 'CS 1.6 original',
-    title: 'CS 1.6 original'
+    linkTitle: 'Atsisiųsti cs 1.6',
+    title: 'CS 1.6 Atsisiųsti',
+    href: '/atsisiusti-cs'
   },
   {
-    icon: icons[0],
-    linkTitle: 'CS online portable',
-    title: 'CS online portable'
+    linkTitle: 'CS 1.6 Full Install',
+    title: 'CS 1.6 Full Install',
+    href: '/cs-16-full-install'
   },
   {
-    icon: icons[0],
-    linkTitle: 'CS 1.6 with bots',
-    title: 'CS 1.6 with bots'
+    linkTitle: 'cs 1.6 high FPS',
+    title: 'CS 1.6 high FPS settings',
+    href: '/how-to-get-high-fps'
+  }
+];
+
+const externalLinks = [
+  {
+    href: 'http://counter-strike-download.lt',
+    title: 'Counter-Strike 1.6 Download'
   },
   {
-    icon: icons[0],
-    linkTitle: ' CS 2019',
-    title: ' CS 2019'
+    href: 'https://counterstrike16download.net',
+    title: 'CS 1.6 download'
   },
   {
-    icon: icons[0],
-    linkTitle: 'CS 1.6 GT',
-    title: 'CS 1.6 GT'
-  },
-  {
-    icon: icons[0],
-    linkTitle: 'CS 1.6 V42',
-    title: 'CS 1.6 V42'
-  },
-  {
-    icon: icons[0],
-    linkTitle: 'CS 1.6 V48',
-    title: 'CS 1.6 V48'
-  },
-  {
-    icon: icons[0],
-    linkTitle: 'CS 1.6 V44',
-    title: 'CS 1.6 V44'
-  },
-  {
-    icon: icons[0],
-    linkTitle: 'CS 1.6 V43',
-    title: 'CS 1.6 V43'
-  },
-  {
-    icon: icons[0],
-    linkTitle: 'CS 1.6 windows 8',
-    title: 'CS 1.6 windows 8'
-  },
-  {
-    icon: icons[0],
-    linkTitle: 'CS 1.6 windows 8.1',
-    title: 'CS 1.6 windows 8.1'
-  },
-  {
-    icon: icons[0],
-    linkTitle: 'CS 1.6 non steam',
-    title: 'CS 1.6 non steam'
-  },
-  {
-    icon: icons[0],
-    linkTitle: 'CS 1.6 final',
-    title: 'CS 1.6 final'
-  },
-  {
-    icon: icons[0],
-    linkTitle: 'CS 1.6 2016 pro',
-    title: 'CS 1.6 2016 pro'
+    href: 'https://fleshas.lt/csdownload',
+    title: 'Fleshas.lt - CS 1.6 download'
   }
 ];
 
 const Sidebar: FC<SidebarProps> = ({ children }) => {
   return (
     <>
-      {/* <h2 className='text-amber-300 py-2 text-sm font-medium uppercase'>
-        Download COUNTER-STRIKE 1.6
-      </h2> */}
+      <ListGroup>
+        {downloads.map((link) => (
+          <ListGroupItem key={link.linkTitle}>
+            <Image
+              width='25'
+              height='25'
+              src={require('../images/icons/cs-boost-b.png?resize&size=25')}
+              webp={require('../images/icons/cs-boost-b.png?resize&size=25&format=webp')}
+              alt='CS 1.6 Download'
+              title='Counter-Strike 1.6'
+            />
+            <Link href={link.href ?? '/cs-1.6-warzone/'}>
+              <a title={link.linkTitle}>{link.title}</a>
+            </Link>
+          </ListGroupItem>
+        ))}
+      </ListGroup>
 
-      {/* <DownloadButtons className='w-full' /> */}
+      <h2 className='text-amber-300 py-2 text-sm font-medium uppercase mt-5'>External links</h2>
+      <ListGroup>
+        {externalLinks.map((link) => (
+          <ListGroupItem key={link.href}>
+            <Image
+              width='25'
+              height='25'
+              src={require('../images/icons/cs-boost-b.png?resize&size=25')}
+              webp={require('../images/icons/cs-boost-b.png?resize&size=25&format=webp')}
+              alt='CS 1.6 Download'
+              title='Counter-Strike 1.6'
+            />
+            <a target='_blank' rel='noopener' href={link.href}>
+              {link.title}
+            </a>
+          </ListGroupItem>
+        ))}
+      </ListGroup>
 
-      {/* <h2 className='text-amber-300 py-2 text-sm font-medium uppercase mt-5'>links</h2> */}
-      <Card>
-        <ul className='list-none'>
-          {downloads.map((item) => (
-            <li key={item.title}>
-              <a title={item.linkTitle} className='py-10' href='/cs-1.6-warzone/'>
-                {item.title}
-              </a>
-            </li>
-          ))}
-        </ul>
-        {children}
-      </Card>
+      {children}
     </>
   );
 };

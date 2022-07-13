@@ -1,10 +1,10 @@
 import Sidebar from '../components/Sidebar';
 import Top from '../components/Top';
 import Card from '../components/Card';
-import HomePage from '../components/content/HomePage';
+import AtsisiustiCS from '../components/content/AtsisiustiCS';
 import NavBar from '../components/NavBar';
-import Head from 'next/head';
 import { schema } from '../csSchema';
+import Head from 'next/head';
 
 export default function Page() {
   return (
@@ -21,7 +21,7 @@ export default function Page() {
         <div className='basis-2/3'>
           <Card>
             <div className='p-2 font-medium'>
-              <HomePage />
+              <AtsisiustiCS />
             </div>
           </Card>
         </div>
@@ -32,8 +32,8 @@ export default function Page() {
 
 Page.layoutProps = {
   meta: {
-    title: 'CS 1.6 Download - Counter Strike 1.6 Download',
+    title: 'CS 1.6 Download - Counter-Strike 1.6 Atsisiusti',
     description:
-      'Download Counter-Strike 1.6 by clicking one of the download buttons, this CS 1.6 setup contains full version of the game. The game does not contains any ads or additional modifications. CS 1.6 install contains default maps, game models (player, gun skins).'
+      'Counter-Strike - buvo išleistas 1999 m. Birželio mėn. Tai žaidimas kuris pasaulyje turi savo vertę. Counter Strike vienas iš labiausiai prestižintų visų laikų šaudymo žaidimų. Pradėjus žaisti žaidimą jums leidžia pasirinkti ar norite žaisti su robotais, botais, ar su kitais žaidėjais.'
   }
 };

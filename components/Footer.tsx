@@ -10,11 +10,28 @@ const Footer = () => {
             itemScope
             itemType='http://schema.org/Organization'
           >
-            Cruising since <span className='text-amber-300 px-2'>2014</span> © All rights Reversed.{' '}
-            <a className='text-amber-300 ml-2' itemProp='url' href={process.env.domain}>
+            Cruising since <span className='font-semibold text-amber-300 px-2'>2014</span> © All
+            rights Reversed.{' '}
+            <a
+              className='font-semibold text-amber-300 ml-2'
+              itemProp='url'
+              href={process.env.domain}
+            >
               <span itemProp='name'>{process.env.siteName}</span>
             </a>
           </div>
+          <a
+            target='_blank'
+            rel='noopener'
+            href='https://www.hey.lt/details.php?id=csdownloadflesh'
+          >
+            <img
+              width='83'
+              height='31'
+              src='https://www.hey.lt/count.php?id=csdownloadflesh'
+              alt='Hey.lt - Nemokamas lankytojų skaitliukas'
+            />
+          </a>
         </div>
       </Container>
     </footer>

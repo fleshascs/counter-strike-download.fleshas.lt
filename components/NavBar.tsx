@@ -3,22 +3,11 @@ import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
 import clsx from 'clsx';
-import Image from './Image';
 
 const navigation = [
   { name: 'Home', href: '/' },
-  {
-    name: (
-      <>
-        Add a Server <span className='text-amber-300'>FREE</span>
-      </>
-    ),
-    href: '/add'
-  },
-  {
-    name: <span className='text-amber-300'>CS 1.6 Download</span>,
-    href: '/counter-strike-download'
-  },
+  { name: 'CS 1.6 download em Português', href: '/cs-1-6-download-em-portugues' },
+  { name: 'CS 1.6 Indir', href: '/cs-1-6-indir' },
   { name: 'Contact', href: '/contact' }
 ];
 
@@ -43,12 +32,16 @@ export default function NavBar() {
               </div>
               <div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>
                 <div className='flex-shrink-0 flex items-center'>
-                  <span
-                    className='block text-white'
-                    style={{ fontFamily: 'bauerg', fontSize: '1.4em' }}
-                  >
-                    FL
-                  </span>
+                  <Link href='/'>
+                    <a>
+                      <span
+                        className='block text-white'
+                        style={{ fontFamily: 'bauerg', fontSize: '1.4em' }}
+                      >
+                        FL
+                      </span>
+                    </a>
+                  </Link>
                 </div>
                 <div className='hidden sm:block sm:ml-6'>
                   <div
