@@ -9,7 +9,7 @@ export default function Contact() {
       <Top />
       <NavBar />
       <div className='flex flex-col lg:flex-row lg:space-x-4 pb-24 pt-6 bg-gray-900'>
-        <div className='basis-1/3 pt-10 lg:pt-0'>
+        <div className='basis-1/3'>
           <Sidebar />
         </div>
         <div className='basis-2/3'>
