@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <div className='page type-page status-publish hentry'>
-      <h3 className='text-amber-300 py-2 text-sm font-medium uppercase'>
+      <h3 className='text-amber-300 pb-2 text-sm font-medium uppercase'>
         Important config settings
       </h3>
       <ul>

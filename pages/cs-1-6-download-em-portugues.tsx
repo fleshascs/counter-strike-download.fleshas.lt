@@ -20,9 +20,9 @@ export default function Page() {
         </div>
         <div className='basis-2/3'>
           <Card>
-            <div className='p-2 font-medium'>
+            <div className='p-4 font-medium'>
               <div className='page type-page status-publish hentry'>
-                <h2 className='text-amber-300 py-2 text-md font-medium uppercase'>
+                <h2 className='text-amber-300 pb-2 text-md font-medium uppercase'>
                   Counter-Strike 1.6 – Download em Português
                 </h2>
                 <p>

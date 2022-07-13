@@ -14,8 +14,8 @@ export default function Contact() {
         </div>
         <div className='basis-2/3'>
           <Card>
-            <div className='p-2 pb-[20rem] font-medium'>
-              <h2 className='py-2 text-md font-medium'>Have any questions?</h2>
+            <div className='p-4 pb-[20rem] font-medium'>
+              <h2 className='pb-2 text-md font-medium'>Have any questions?</h2>
               Email: cs.fleshas.lt@gmail.com
             </div>
           </Card>

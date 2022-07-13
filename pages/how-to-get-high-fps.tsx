@@ -15,7 +15,7 @@ export default function Page() {
         </div>
         <div className='basis-2/3'>
           <Card>
-            <div className='p-2 font-medium'>
+            <div className='p-4  font-medium'>
               <HowToGetHighFPS />
             </div>
           </Card>

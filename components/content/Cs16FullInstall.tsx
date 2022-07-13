@@ -3,7 +3,7 @@ import DownloadButtons from '../DownloadButtons';
 export default function Page() {
   return (
     <div className='page type-page status-publish hentry'>
-      <h2 className='text-amber-300 py-2 text-sm font-medium uppercase'>
+      <h2 className='text-amber-300 pb-2 text-sm font-medium uppercase'>
         Download Counter-Strike 1.6 Full install
       </h2>
       <ul className='mt-6'>
